@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-container">
+      <ul class="game-name-container">
+        <li>Rock</li>
+        <li>Paper</li>
+        <li>Scissors</li>
+      </ul>
+
+      <div class="score-container">
+        <h3>Player</h3>
+        <p id="player-score">0</p>
+        <h3>computer</h3>
+        <p id="computer-score">0</p>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="game-container">
+        <div class="choice-container paper" data-choice="paper">
+          <div class="choice-content paper"></div>
+        </div>
+        <div class="choice-container scissors" data-choice="scissors">
+          <div class="choice-content scissors"></div>
+        </div>
+        <div class="choice-container rock" data-choice="rock">
+          <div class="choice-content rock"></div>
+        </div>
+      </section>
+
+      <section class="game-result">
+        <div class="choice-container user-result first">
+          <div class="choice-content user-result"></div>
+        </div>
+        <h3 class="user-choice">You picked</h3>
+        <div class="choice-container computer-result second">
+          <div class="choice-content computer-result"></div>
+        </div>
+        <h3 class="computer-choice">The house picked</h3>
+        <p id="final-message"></p>
+        <button id="play-again">Play Again</button>
+      </section>
+
+      <section class="rules-container" id="rules">
+        <h2>Rules</h2>
+        <div class="rules-modal" id="rules-modal">
+          <h2>Rules</h2>
+          <img src="./images/image-rules.svg" alt="" />
+          <!-- <p class="close">x</p> -->
+          <div class="close-btn">
+            <span class="close-btn"></span>
+            <span class="close-btn"></span>
+          </div>
+        </div>
+      </section>
+
+      <button id="reset">Reset Score</button>
+    </main>
+
+    <!-- <footer class="footer-container">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer> -->
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
